@@ -1,0 +1,592 @@
+@font-face {
+    font-family: "Le Murmure";
+    src: url(/le-murmure.ttf);
+}
+
+/* COULEURS
+
+ROSE: #FFAD94
+NOIR-GRIS: #212121
+BLANC: #F5F5F5 */
+
+/* INTER TIGHT
+	font-family: 'Inter Tight', sans-serif; */
+
+img.work {
+    width: 29.167vw;
+    transition: .3s}
+
+.interieur-section, .melo-section, .stamina-section, .love-section, .porsche-section, .breakfast-section {width: 560px}
+
+body {
+    background-color: #212121;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter Tight', sans-serif;}
+
+.main {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+
+}
+
+.compteur-container {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-color: #212121;
+    top: -100vh; /* PARAMETRE POUR MONTER LE COMPTEUR */
+    z-index: 2;
+    display:none
+}
+.compteur {
+    font-size: 200px;
+    color: #FFAD94;
+    font-family: "Le Murmure";
+    position: relative;
+    top: 20px
+}
+
+.compteur-pourcent {font-size: 100px}
+
+.line {
+    left: 0px;
+    height: 25px;
+    background-color: #FFAD94;
+    width: 100vw;
+    position: absolute;
+    top: calc( 100vh - 25px)
+}
+
+.compteur-overflow {
+    height: 240px;
+    overflow:hidden;
+    position: absolute;
+    left: 1640px;
+    top: 780px
+}
+
+nav {
+    width: calc(100vw - 60px);
+    padding: 30px;
+    position: fixed;
+    background: linear-gradient(180deg, rgba(33,33,33,1) 0%, rgba(255,255,255,0) 100%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;}
+
+
+
+.name-nav {
+    color:#FFAD94;
+    font-family: "Le Murmure";
+    font-size: 2.083vw
+}
+
+.menu {
+    font-size: 16px;
+    width: 5.729vw;
+    height: 40px;
+    border: none;
+    border-radius: 32px;
+    padding: 10px 30px;
+    background-color: #212121;
+    color: #FFAD94}
+
+.toggle-mode svg {
+    width: 32px;
+    height: 32px;
+    fill: #212121;
+    transition: fill .2s}
+
+.block-menu.active {
+    width: 25vw;
+    height: 16.875vw;
+    background-color: #FFAD94;
+    position: fixed;
+    left: calc(100vw - 25vw - 30px);
+    top: 30px;
+
+
+}
+
+.block-menu {
+    width: 11.458vw;
+    height: 64px;
+    border-radius: 22px;
+    left: calc(100vw - 30px - 11.458vw);
+    top: 30px;
+    background-color: #FFAD94;
+    position: fixed;
+    transition : .5s cubic-bezier(0.69, 0, 0.25, 1);
+    z-index: 2
+}
+.block-menu-top{
+    padding: 12px;
+    float:right;
+    display: flex;
+    width: 185px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category {
+    font-size: 1.771vw;
+    padding: 40px 40px 40px 30px;
+    width: 22.396vw;
+    z-index: 2;
+    width: 0
+}
+
+.category.active {width:22.396vw}
+
+.desc-section {display: none}
+
+.category-name.active {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -40px;
+    transform: translateY(-40px);
+}
+
+.desc-section {display: contents; height: 200px}
+.category-name {
+    position:relative;
+    transition: transform .8s cubic-bezier(0.215, 0.61, 0.355, 1) .5s;
+    top: 40px
+    }
+
+.category-name svg {
+    width: 32px;
+    height: 32px;
+    margin-right: 20px
+}
+
+.social {
+    margin: 20px 0
+}
+
+.category-overflow {overflow:hidden}
+
+.toggle-mode svg:hover {fill: #F5F5F5}
+
+.category-name:hover {
+    left: 40px;
+    transition: .5s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+h2 {
+    font-size: 4.167vw;
+    text-transform: uppercase;
+    color:#F5F5F5;
+    margin: 0px
+}
+
+h1 {
+    font-size: 22.65vw;
+    font-family: "Le Murmure";
+    margin: 0px;
+    position: relative;
+    top: -55px;
+    color:#FFAD94;
+    z-index: 1
+}
+
+header {
+    margin: calc(100vh - 710px) 88px 0px;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    position: relative}
+
+.work-section {
+    display: grid;
+    grid-template-columns: repeat(3, 29.167vw);
+    grid-column-gap: 36px;
+    grid-row-gap: 36px;
+    width: 91.406vw;
+    margin:auto auto 50px auto
+
+}
+
+.interieur-section, .melo-section, .stamina-section, .love-section, .porsche-section, .breakfast-section {
+    margin-bottom: 36px;
+
+}
+
+.interieur-section, .porsche-section {height: 41.250vw }
+.melo-section {height: 29.167vw}
+.stamina-section {height: 41.563vw}
+.love-section {height: 44.115vw}
+.breakfast-section {height: 16.406vw}
+
+.category-section.hover {
+    position: relative;
+    top : -130px;
+    left: 30px;
+    padding: 4px 16px;
+    width: fit-content;
+    background-color: #F5F5F5;
+    border-radius: 32px;
+    opacity: 1
+
+}
+
+.category-section {
+    opacity: 0;
+    transition: .3s;
+    position: relative;
+    top : -130px;
+    left: 30px;
+    padding: 4px 16px;
+    width: fit-content;
+    background-color: #F5F5F5;
+    border-radius: 32px;
+}
+
+.category-work {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600
+}
+
+.work-title {
+    font-size: 82px;
+    font-family: "Le Murmure";
+    color: #FFAD94;;
+    position: relative;
+    top: -141px;
+    left: 30px;
+    opacity: 0;
+    transition: .3s
+}
+
+.work-title.hover {
+    opacity: 1
+}
+
+.work-overflow {
+    overflow:hidden;
+    width: 29.167vw}
+
+img.work.hover {
+    filter: brightness(50%);
+    transform: scale(1.02);}
+
+button.cta {
+    margin-top: 267px;
+    margin: auto
+}
+
+.name {
+    font-size: 28px;
+    margin: 42px;
+    color:#F5F5F5
+}
+@media screen and (min-width: 1280px) and (max-width: 1365px){
+
+    h1 {font-size: 275px}
+
+    h2 {font-size: 50px}
+
+    header {margin: calc(100vh - 450px) 88px 0px;}
+
+    img.work {width: 360px}
+
+    .work-overflow {width: 360px}
+
+    .interieur-section, .melo-section, .stamina-section, .love-section, .porsche-section, .breakfast-section{
+        width: 360px;
+        margin-bottom: 30px
+    }
+
+    .work-column-1, .work-column-2, .work-column-3 {width: 360px}
+
+    .work-section {
+        grid-template-columns: repeat(3, 360px);
+        grid-column-gap: 30px;
+        width: 1142px}
+
+    .interieur-section, .porsche-section {height: 509.275px }
+    .melo-section {height: 360px}
+    .stamina-section {height: 512.4px}
+    .love-section {height: 545.035px}
+    .breakfast-section {height: 202.4px}
+
+    .block-menu {
+        width: 131.175px;
+        height: 2.928vw;
+        left: calc(100vw - 10.249vw - 30px);
+    }
+    .block-menu-top {
+        width: calc(10.249vw - 18px);
+        height: 2.928vw;
+        padding: 0px 6px 0px 12px
+    }
+
+    button.menu {
+        height: 2.050vw;
+        padding: 0;
+        width: 5.564vw;
+        font-family: 'Inter Tight', sans-serif;
+        font-size: 0.878vw
+    }
+
+    .toggle-mode svg {
+        width: 1.464vw
+    }
+
+    .block-menu.active {height: 20.313vw}
+
+    .category {padding: 50px 20px 30px 30px}
+
+    .social {
+        margin: 15px 0;
+    }
+
+    .category-name:hover {
+        left: 10px;}
+
+    .category-name svg {
+        width: 20px
+    }
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1919px){
+
+    .block-menu {
+        width: 10.249vw;
+        height: 2.928vw;
+        left: calc(100vw - 10.249vw - 30px);
+    }
+    .block-menu-top {
+        width: calc(10.249vw - 18px);
+        height: 2.928vw;
+        padding: 0px 6px 0px 12px
+    }
+
+    button.menu {
+        height: 2.050vw;
+        padding: 0;
+        width: 5.564vw;
+        font-family: 'Inter Tight', sans-serif;
+        font-size: 0.878vw
+    }
+
+    .toggle-mode svg {
+        width: 1.464vw
+    }
+
+    .work-section {
+        grid-template-columns: repeat(3, 27.818vw);
+        grid-column-gap: 2.196vw;
+        width: 87.921vw}
+
+    .interieur-section, .melo-section, .stamina-section, .love-section, .porsche-section, .breakfast-section {
+        width: 27.818vw;
+        margin-bottom: 2.196vw
+    }
+
+    .work-overflow {width: 27.818vw}
+
+    img.work {width: 27.818vw}
+
+    .interieur-section, .porsche-section {height: 39.354vw }
+    .melo-section {height: 27.818vw}
+    .stamina-section {height: 39.590vw}
+    .love-section {height: 42.116vw}
+    .breakfast-section {height: 15.643vw}
+
+    h2 {font-size: 4.026vw}
+
+    h1 {font-size: 21.669vw}
+
+    header {
+        margin-top: 41.015625vh;
+        height: 35.871vw;
+        margin-top: calc(100vh - 35.139vw)}
+
+    .work-title {
+        font-size: 4.026vw;
+        top: -100px;
+        left: 25px}
+
+    .category-work {font-size: 10px}
+
+    .category-section.hover, .category-section {
+        padding: 2px 8px;
+        top: -95px;
+        left: 25px}
+
+    .block-menu.active {
+        width: 26.354vw;
+        height: 19.107vw;
+        left: calc(100vw - 26.354vw - 30px);
+    }
+    
+    .category {
+        
+        padding: 3.660vw 2.196vw 2vw 1.830vw;
+        font-size: 1.903vw;
+
+    }
+
+    .social {margin: 0.878vw 0}
+
+    .category-name svg {
+        width: 1.611vw
+    }
+
+    .category-name:hover {left: 10px}
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+    
+    .name-nav {font-size: 25px}
+
+    nav {
+        height: 85px;
+        padding: 12px;
+        width: calc(100vw - 24px)
+    }
+
+    .block-menu {
+        height: 32px;
+        width: 120px;
+        left: calc(100vw - 16px - 120px);
+        top: 16px
+    }
+
+    .block-menu-top{
+        height: calc(32px - 8px);
+        width: calc(120px - 16px);
+        left: calc(100vw - 16px - 120px);
+        top: 16px;
+        padding: 4px 4px 4px 12px
+    }
+
+    .toggle-mode svg {width: 15px}
+
+    button.menu {
+        padding: 0;
+        width: 65px;
+        height: 25px;
+        font-size: 12px}
+
+    h1 {
+        font-size: 77px;
+        width: 310px;
+        top: 0}
+
+    img.work {width: 300px}
+
+    .work-title {
+        opacity: 1;
+        font-size: 85px;
+        width: 300px;
+        height: 100px;
+        position: static
+        }
+
+    .interieur-section, .melo-section, .stamina-section, .love-section, .porsche-section, .breakfast-section {
+        width: 300px;
+        height: auto;
+        margin-bottom: 0px}
+
+    .work-column-1, .work-column-2, .work-column-3 {
+        height: 685px;
+        position: absolute;
+        width: 300px;
+        bottom: 30px;
+        left: 50%;
+        transform: translate(-50%)}
+
+    header {
+        margin: calc(100vh - 130px - 15px) 40px 20px 40px;
+        width: 310px;}
+
+    h2 {
+        width: 200px;
+        position: relative;
+        top: 10px}
+
+    .name {display:none}
+
+    .work-overflow {
+        width: 300px;
+        overflow:visible;
+        height: 440px}
+
+    .desc-section, #desc {
+        font-size: 18px;
+        display:contents;
+        padding-top: 19px;
+    }
+
+    .category-section {
+        opacity: 1
+    }
+
+    .work-section {height: 100vh; width: 100vw; margin: 0; display: block}
+
+    .category-section {display:none}
+
+    .interieur-section, .melo-section, .stamina-section, .love-section, .interieur-section, .porsche-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .melo-section img.work {
+        position: relative;
+        top: 126px
+}
+
+    .text {height: 150px}
+
+    .love-section {position: relative; top: -690px}
+
+    .love-section .work-title {
+        font-size: 74px;
+        position: relative;
+        top: 12px;
+        left: 0px}
+
+    .breakfast-section {
+        position: relative;
+
+        }
+    .love-section img.work {
+        position: relative;
+        top: -30px
+}
+
+    .breakfast-section, .porsche-section {
+        position: relative;
+        top: -690px
+    }
+
+    .breakfast-section .work-title {font-size: 80px}
+
+    .breakfast-section img.work {
+        position: relative;
+        top: 256px
+    }
+
+    .porsche-section img.work {
+        position: relative;
+
+    }
+
+    .porsche-section .work-title {
+        font-size: 90px;
+        text-align: center;
+        position: relative;
+        top: -5px;
+        left: 0px
+    }
+
+
+}
