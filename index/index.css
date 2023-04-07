@@ -443,7 +443,7 @@ button.cta {
     .category-name:hover {left: 10px}
 }
 
-@media screen and (min-width: 300px) and (max-width: 400px) {
+@media screen and (min-width: 300px) and (max-width: 500px) {
     
     .name-nav {font-size: 25px}
 
