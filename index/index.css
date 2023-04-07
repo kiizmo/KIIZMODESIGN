@@ -445,41 +445,41 @@ button.cta {
 
 @media screen and (min-width: 300px) and (max-width: 500px) {
     
-    .name-nav {font-size: 25px}
+    .name-nav {font-size: 6.410vw}
 
     nav {
-        height: 35px;
-        padding: 12px;
-        width: calc(100vw - 24px);
+        height: 8.974vw;
+        padding: 3.077vw;
+        width: calc(100vw - 6.154vw);
         align-items: flex-end
     }
 
     .block-menu {
-        height: 32px;
-        width: 120px;
-        left: calc(100vw - 16px - 120px);
-        top: 16px
+        height: 8.205vw;
+        width: 30.769vw;
+        left: calc(100vw - 4.103vw - 30.769vw);
+        top: 4.103vw
     }
 
     .block-menu-top{
-        height: calc(32px - 8px);
-        width: calc(120px - 16px);
-        left: calc(100vw - 16px - 120px);
-        top: 16px;
-        padding: 4px 4px 4px 12px
+        height: calc(8.205vw - 2.051vw);
+        width: calc(30.769vw - 4.103vw);
+        left: calc(100vw - 4.103vw - 30.769vw);
+        top: 4.103vw;
+        padding: 1.026vw 1.026vw 1.026vw 3.077vw
     }
 
-    .toggle-mode svg {width: 15px}
+    .toggle-mode svg {width: 3.846vw}
 
     button.menu {
         padding: 0;
-        width: 65px;
-        height: 25px;
-        font-size: 12px}
+        width: 16.667vw;
+        height: 6.410vw;
+        font-size: 3.077vw}
 
     h1 {
-        font-size: 77px;
-        width: 310px;
+        font-size: 19.744vw;
+        width: 79.487vw;
         top: 0}
 
     img.work {width: 300px}
@@ -487,44 +487,44 @@ button.cta {
     .work-title {
         opacity: 1;
         font-size: 85px;
-        width: 300px;
-        height: 100px;
+        width:76.923vw;
+        height: 25.641vw;
         position: static
         }
 
     .interieur-section, .melo-section, .stamina-section, .love-section, .porsche-section, .breakfast-section {
-        width: 300px;
+        width:76.923vw;
         height: auto;
         margin-bottom: 0px}
 
     .work-column-1, .work-column-2, .work-column-3 {
         height: 685px;
         position: absolute;
-        width: 300px;
-        bottom: 30px;
+        width:76.923vw;
+        bottom: 7.692vw;
         left: 50%;
         transform: translate(-50%)}
 
     header {
-        margin: calc(100vh - 130px - 15px) 40px 20px 40px;
-        width: 310px;}
+        margin: calc(100vh - 33.333vw - 3.846vw) calc((100vw - 79.487vw)/2) 5.128vw calc((100vw - 79.487vw)/2);
+        width: 79.487vw;}
 
     h2 {
-        width: 200px;
+        width: 51.282vw;
         position: relative;
-        top: 10px}
+        top: 2.564vw}
 
     .name {display:none}
 
     .work-overflow {
-        width: 300px;
+        width:76.923vw;
         overflow:visible;
-        height: 440px}
+        height: 112.821vw}
 
-    .desc-section, #desc {
-        font-size: 18px;
+    .desc-section {
+        font-size: 4.615vw;
         display:contents;
-        padding-top: 19px;
+        padding-top: 5.128vw;
     }
 
     .category-section {
@@ -542,17 +542,17 @@ button.cta {
 
     .melo-section img.work {
         position: relative;
-        top: 126px
+        top: 32.308vw
 }
 
-    .text {height: 150px}
+    .text {height: 38.462vw}
 
-    .love-section {position: relative; top: -690px}
+    .love-section {position: relative; top: -176.923vw}
 
     .love-section .work-title {
-        font-size: 74px;
+        font-size: 18.974vw;
         position: relative;
-        top: 12px;
+        top: 3.077vw;
         left: 0px}
 
     .breakfast-section {
@@ -561,19 +561,19 @@ button.cta {
         }
     .love-section img.work {
         position: relative;
-        top: -30px
+        top: -7.692vw
 }
 
     .breakfast-section, .porsche-section {
         position: relative;
-        top: -690px
+        top: -176.923vw
     }
 
-    .breakfast-section .work-title {font-size: 80px}
+    .breakfast-section .work-title {font-size: 20.513vw}
 
     .breakfast-section img.work {
         position: relative;
-        top: 256px
+        top: 65.641vw
     }
 
     .porsche-section img.work {
@@ -582,32 +582,32 @@ button.cta {
     }
 
     .porsche-section .work-title {
-        font-size: 90px;
+        font-size: 23.077vw;
         text-align: center;
         position: relative;
-        top: -5px;
+        top: -1.282vw;
         left: 0px
     }
 
     .block-menu.active {
-        width: 355px;
-        height: 240px;
-        left: calc(100vw - 355px - 16px);
-        top: 16px;
-        border-radius: 16px
+        width: calc(100vw - 8.205vw);
+        height: 61.538vw;
+        left: calc(100vw - (100vw - 8.205vw) - 4.103vw);
+        top: 4.103vw;
+        border-radius: 4.103vw
     }
 
     .category.active {
-        width: calc(355px - 70px)
+        width: calc(91.026vw - 17.949vw)
     }
 
     .category-name {
-        font-size: 22px;
+        font-size: 5.641vw;
     }
 
-    .category {padding: 40px 40px 40px 20px;}
+    .category {padding:5.128vw 5.128vw 5.128vw 5.128vw;}
 
-    .social {margin: 10px 0}
+    .social {margin: 2.564vw 0}
 
     .left-nav {
         overflow: hidden
@@ -616,6 +616,6 @@ button.cta {
     .name-nav {transition: transform .5s ease-in-out}
     
     .name-nav.active {
-        transform: translateY(-30px)
+        transform: translateY(-7.692vw)
     }
 }
