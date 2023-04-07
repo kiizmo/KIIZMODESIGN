@@ -6,7 +6,8 @@ let category1 = document.getElementsByClassName("category-name")[1];
 let category2 = document.getElementsByClassName("category-name")[2];
 let category3 = document.getElementsByClassName("category-name")[3];
 let category4 = document.getElementsByClassName("category-name")[4];
-let categoryBox = document.querySelector(".category")
+let categoryBox = document.querySelector(".category");
+let title = document.querySelector(".name-nav")
  
 buttonMenu.addEventListener('click', () => {
     menu.classList.toggle("active");
@@ -15,7 +16,8 @@ buttonMenu.addEventListener('click', () => {
     category2.classList.toggle("active");
     category3.classList.toggle("active");
     category4.classList.toggle("active");
-    categoryBox.classList.toggle("active")}
+    categoryBox.classList.toggle("active");
+    title.classList.toggle("active")}
 )
 
 function Category() {

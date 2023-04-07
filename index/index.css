@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Le Murmure";
-    src: url(/le-murmure.ttf);
+    src: url(../index/le-murmure.ttf);
 }
 
 /* COULEURS
@@ -448,9 +448,10 @@ button.cta {
     .name-nav {font-size: 25px}
 
     nav {
-        height: 85px;
+        height: 35px;
         padding: 12px;
-        width: calc(100vw - 24px)
+        width: calc(100vw - 24px);
+        align-items: flex-end
     }
 
     .block-menu {
@@ -588,5 +589,33 @@ button.cta {
         left: 0px
     }
 
+    .block-menu.active {
+        width: 355px;
+        height: 240px;
+        left: calc(100vw - 355px - 16px);
+        top: 16px;
+        border-radius: 16px
+    }
 
+    .category.active {
+        width: calc(355px - 70px)
+    }
+
+    .category-name {
+        font-size: 22px;
+    }
+
+    .category {padding: 40px 40px 40px 20px;}
+
+    .social {margin: 10px 0}
+
+    .left-nav {
+        overflow: hidden
+    }
+    
+    .name-nav {transition: transform .5s ease-in-out}
+    
+    .name-nav.active {
+        transform: translateY(-30px)
+    }
 }
