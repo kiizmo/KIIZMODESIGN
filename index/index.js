@@ -149,6 +149,14 @@ let name2 = document.querySelector("h2")
 let credit = document.querySelector(".name")
 let projectBtn = document.querySelector(".more");
 
+let customCursor = document.querySelector("#custom-cursor");
+
+
+document.addEventListener('mousemove', e => {
+  customCursor.style.left = e.clientX + 'px';
+  customCursor.style.top = e.clientY + 'px';
+});
+
 
 toggleBtn.addEventListener('click', () => {
 
@@ -169,6 +177,7 @@ toggleBtn.addEventListener('click', () => {
         titlePorsche.classList.add("light");
         titleStamina.classList.add("light");
         titleBreakfast.classList.add("light");
+        customCursor.classList.add("light")
         
         console.log(mode);
         console.log(titleInterieur)
@@ -190,16 +199,98 @@ toggleBtn.addEventListener('click', () => {
         titleStamina.classList.remove("light");
         titleBreakfast.classList.remove("light");
         credit.classList.remove("light");
-        projectBtn.classList.remove("light")
+        projectBtn.classList.remove("light");
+        customCursor.classList.remove("light")
         console.log(mode)
         console.log(titleInterieur)
     }
 })
 
-if (mode === 0){
+/* CURSOR CUSTOM */
+let menuOpener = document.querySelector("button.menu");
+let sectionBreakfast = document.querySelector(".breakfast-section");
+let sectionStamina = document.querySelector(".stamina-section");
+let sectionPorsche = document.querySelector(".porsche-section");
+let sectionMelo = document.querySelector(".melo-section");
+let sectionLove = document.querySelector(".love-section");
+let sectionInterieur = document.querySelector(".interieur-section");
 
-} else {        
+sectionBreakfast.addEventListener('mouseover', () => {
+    customCursor.style.transform = 'scale(1.5)'
+})
 
-}
+sectionBreakfast.addEventListener('mouseout', () => {
+    customCursor.style.transform = 'scale(1)'
+})
 
-console.log(titleInterieur)
+sectionInterieur.addEventListener('mouseover', () => {
+    customCursor.style.transform = 'scale(1.5)'
+})
+
+sectionInterieur.addEventListener('mouseout', () => {
+    customCursor.style.transform = 'scale(1)'
+})
+
+sectionLove.addEventListener('mouseover', () => {
+    customCursor.style.transform = 'scale(1.5)'
+})
+
+sectionLove.addEventListener('mouseout', () => {
+    customCursor.style.transform = 'scale(1)'
+})
+
+sectionMelo.addEventListener('mouseover', () => {
+    customCursor.style.transform = 'scale(1.5)'
+})
+
+sectionMelo.addEventListener('mouseout', () => {
+    customCursor.style.transform = 'scale(1)'
+})
+
+sectionPorsche.addEventListener('mouseover', () => {
+    customCursor.style.transform = 'scale(1.5)'
+})
+
+sectionPorsche.addEventListener('mouseout', () => {
+    customCursor.style.transform = 'scale(1)'
+})
+
+sectionStamina.addEventListener('mouseover', () => {
+    customCursor.style.transform = 'scale(1.5)'
+})
+
+sectionStamina.addEventListener('mouseout', () => {
+    customCursor.style.transform = 'scale(1)'
+})
+
+menuOpener.addEventListener('mouseover', () => {
+    customCursor.style.transform = 'scale(3)'
+})
+
+menuOpener.addEventListener('mouseout', () => {
+    customCursor.style.transform = 'scale(1)'
+})
+
+projectBtn.addEventListener('mouseover', () => {
+    customCursor.style.transform = 'scale(3)'
+})
+
+projectBtn.addEventListener('mouseout', () => {
+    customCursor.style.transform = 'scale(1)'
+})
+
+toggleBtn.addEventListener('mouseover', () => {
+    customCursor.style.transform = 'scale(1.5)'
+})
+
+toggleBtn.addEventListener('mouseout', () => {
+    customCursor.style.transform = 'scale(1)'
+})
+
+document.addEventListener('mousedown', () => {
+    customCursor.style.transform = 'scale(0.2)'
+})
+
+document.addEventListener('mouseup', () => {
+    customCursor.style.transform = 'scale(1)'
+})
