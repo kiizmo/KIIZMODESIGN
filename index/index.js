@@ -205,7 +205,7 @@ toggleBtn.addEventListener('click', () => {
         console.log(titleInterieur)
     }
 })
-
+if (window.innerHeight > 720){
 /* CURSOR CUSTOM */
 let menuOpener = document.querySelector("button.menu");
 let sectionBreakfast = document.querySelector(".breakfast-section");
@@ -293,4 +293,4 @@ document.addEventListener('mousedown', () => {
 
 document.addEventListener('mouseup', () => {
     customCursor.style.transform = 'scale(1)'
-})
+})}
