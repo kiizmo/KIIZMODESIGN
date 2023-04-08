@@ -153,6 +153,8 @@ button.more {
     cursor: none
 }
 
+button.more :visited {color:#212121}
+
 .category {
     font-size: 1.771vw;
     padding: 40px 40px 40px 30px;
