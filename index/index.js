@@ -20,23 +20,21 @@ buttonMenu.addEventListener('click', () => {
     title.classList.toggle("active")}
 )
 
-function Category() {
-    let category = document.querySelectorAll(".category-work");
-    console.log(category)
 
-    category.style.left = "calc(560px - 100% - 13px)"
-}
-
+let titleInterieur = document.getElementsByClassName("work-title")[0];
+let titleLove = document.getElementsByClassName("work-title")[1];
+let titleMelo = document.getElementsByClassName("work-title")[2];
+let titlePorsche = document.getElementsByClassName("work-title")[3];
+let titleStamina = document.getElementsByClassName("work-title")[4];
+let titleBreakfast = document.getElementsByClassName("work-title")[5];
 /* HOVER WORKS */
 
 let viewportWidth = window.innerWidth;
-console.log(viewportWidth)
 
 if (viewportWidth > 720){
 let sectionInterieur = document.querySelector(".interieur-section");
 let imgInterieur = document.getElementsByClassName("work")[0];
 let categoryInterieur = document.getElementsByClassName("category-section")[0];
-let titleInterieur = document.getElementsByClassName("work-title")[0];
 
 sectionInterieur.addEventListener('mouseover', () => {
 
@@ -56,7 +54,7 @@ sectionInterieur.addEventListener('mouseout', () => {
 let sectionLove = document.querySelector(".love-section");
 let imgLove = document.getElementsByClassName("work")[1];
 let categoryLove = document.getElementsByClassName("category-section")[1];
-let titleLove = document.getElementsByClassName("work-title")[1];
+
 
 sectionLove.addEventListener('mouseover', () => {
     imgLove.classList.add("hover");
@@ -73,7 +71,7 @@ sectionLove.addEventListener('mouseout', () => {
 let sectionMelo = document.querySelector(".melo-section");
 let imgMelo = document.getElementsByClassName("work")[2];
 let categoryMelo = document.getElementsByClassName("category-section")[2];
-let titleMelo = document.getElementsByClassName("work-title")[2];
+
 
 sectionMelo.addEventListener('mouseover', () => {
     imgMelo.classList.add("hover");
@@ -90,7 +88,7 @@ sectionMelo.addEventListener('mouseout', () => {
 let sectionPorsche = document.querySelector(".porsche-section");
 let imgPorsche = document.getElementsByClassName("work")[3];
 let categoryPorsche = document.getElementsByClassName("category-section")[3];
-let titlePorsche = document.getElementsByClassName("work-title")[3];
+
 
 sectionPorsche.addEventListener('mouseover', () => {
     imgPorsche.classList.add("hover");
@@ -107,7 +105,7 @@ sectionPorsche.addEventListener('mouseout', () => {
 let sectionStamina = document.querySelector(".stamina-section");
 let imgStamina = document.getElementsByClassName("work")[4];
 let categoryStamina = document.getElementsByClassName("category-section")[4];
-let titleStamina = document.getElementsByClassName("work-title")[4];
+
 
 sectionStamina.addEventListener('mouseover', () => {
     imgStamina.classList.add("hover");
@@ -124,7 +122,7 @@ sectionStamina.addEventListener('mouseout', () => {
 let sectionBreakfast = document.querySelector(".breakfast-section");
 let imgBreakfast = document.getElementsByClassName("work")[5];
 let categoryBreakfast = document.getElementsByClassName("category-section")[5];
-let titleBreakfast = document.getElementsByClassName("work-title")[5];
+
 
 sectionBreakfast.addEventListener('mouseover', () => {
     imgBreakfast.classList.add("hover");
@@ -139,3 +137,69 @@ sectionBreakfast.addEventListener('mouseout', () => {
 )}
 
 else {}
+
+/* LIGHT MODE */
+
+let mode = 0; 
+let toggleBtn = document.querySelector(".toggle-mode");
+let body = document.querySelector("body");
+let nav = document.querySelector("nav");
+let nameTitle = document.querySelector("h1");
+let name2 = document.querySelector("h2")
+let credit = document.querySelector(".name")
+let projectBtn = document.querySelector(".more");
+
+
+toggleBtn.addEventListener('click', () => {
+
+    if (mode === 0){
+        mode++;
+        buttonMenu.classList.add("light");
+        menu.classList.add("light");
+        body.classList.add("light");
+        nav.classList.add("light");
+        title.classList.add("light");
+        nameTitle.classList.add("light");
+        name2.classList.add("light");
+        credit.classList.add("light");
+        projectBtn.classList.add("light");
+        titleInterieur.classList.add("light");
+        titleLove.classList.add("light");
+        titleMelo.classList.add("light");
+        titlePorsche.classList.add("light");
+        titleStamina.classList.add("light");
+        titleBreakfast.classList.add("light");
+        
+        console.log(mode);
+        console.log(titleInterieur)
+    }
+
+    else if (mode === 1){
+        mode--;
+        buttonMenu.classList.remove("light");
+        menu.classList.remove("light");
+        body.classList.remove("light");
+        nav.classList.remove("light");
+        title.classList.remove("light");
+        nameTitle.classList.remove("light");
+        name2.classList.remove("light");
+        titleInterieur.classList.remove("light");
+        titleLove.classList.remove("light");
+        titleMelo.classList.remove("light");
+        titlePorsche.classList.remove("light");
+        titleStamina.classList.remove("light");
+        titleBreakfast.classList.remove("light");
+        credit.classList.remove("light");
+        projectBtn.classList.remove("light")
+        console.log(mode)
+        console.log(titleInterieur)
+    }
+})
+
+if (mode === 0){
+
+} else {        
+
+}
+
+console.log(titleInterieur)
