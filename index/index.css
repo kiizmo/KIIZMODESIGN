@@ -550,7 +550,7 @@ button.cta {
         font-size: 3.077vw}
 
     h1 {
-        font-size: 16vw;
+        font-size: 16.744vw;
         top: 0}
 
     .work-title {
@@ -562,7 +562,10 @@ button.cta {
         }
 
     header {
-        margin: calc(100vh - 33.333vw - 3.846vw) calc((100vw - 79.487vw)/2) 5.128vw calc((100vw - 79.487vw)/2);
+        margin-top: calc(100vh - 14.282vh);
+        margin-right: calc((100vw - 79.487vw)/2);
+        margin-bottom: 0;
+        margin-left: calc((100vw - 79.487vw)/2);
         width: 79.487vw;}
 
     .block-menu.active {
