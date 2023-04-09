@@ -215,6 +215,7 @@ h2.light {
 
 h1 {
     font-size: 22.65vw;
+    font-family: "Le Murmure";
     margin: 0px;
     position: relative;
     top: -55px;
@@ -230,7 +231,8 @@ header {
     display: flex;
     flex-direction: column;
     z-index: 0;
-    position: relative}
+    position: relative;
+    font-weight: 400}
 
 .work-section {
     display: grid;
