@@ -144,13 +144,14 @@ let mode = 0;
 let toggleBtn = document.querySelector(".toggle-mode");
 let body = document.querySelector("body");
 let nav = document.querySelector("nav");
-let nameTitle = document.querySelector("h1");
+let nameTitle = document.querySelector(".nameTitle");
 let name2 = document.querySelector("h2")
 let credit = document.querySelector(".name")
 let projectBtn = document.querySelector(".more");
 
 let customCursor = document.querySelector("#custom-cursor");
 
+console.log(nameTitle)
 
 document.addEventListener('mousemove', e => {
   customCursor.style.left = e.clientX + 'px';

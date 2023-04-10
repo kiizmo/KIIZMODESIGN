@@ -213,18 +213,22 @@ h2.light {
     color:#212121
 }
 
-h1 {
+.h1 {
     font-size: 22.65vw;
     font-family: "Le Murmure";
     margin: 0px;
     position: relative;
-    top: -55px;
-    color:#FFAD94;
+    /*top: -55px;*/
     z-index: 1;
-    transition: color .2s
+    font-weight: 400
 }
 
-h1.light {color:#FF9001}
+
+.nameTitle {
+    fill:#FFAD94;
+    transition: fill .2s;}
+
+.nameTitle.light {fill:#FF9001}
 
 header {
     margin: calc(100vh - 710px) 88px 0px;
@@ -232,7 +236,7 @@ header {
     flex-direction: column;
     z-index: 0;
     position: relative;
-    font-weight: 400}
+    }
 
 .work-section {
     display: grid;
@@ -345,26 +349,28 @@ button.cta {
 
 @media screen and (min-width: 1024px) and (max-width: 1365px){
 
-    h1 {font-size: 275px}
+    .h1 {
+        margin-top: 2.344vw;
+        width: 85.938vw}
 
-    h2 {font-size: 50px}
+    h2 {font-size: 3.906vw}
 
-    header {margin: calc(100vh - 450px) 88px 0px;}
+    header {margin: calc(100vh - 47.500vh - 3.750vh) 6.875vw 2.734vw;}
 
-    img.work {width: 360px}
+    img.work {width: 28.125vw}
 
-    .work-overflow {width: 360px}
+    .work-overflow {width: 28.125vw}
 
     .interieur-section, .melo-section, .stamina-section, .love-section, .porsche-section, .breakfast-section{
-        width: 360px;
-        margin-bottom: 30px
+        width: 28.125vw;
+        margin-bottom: 2.344vw
     }
 
-    .work-column-1, .work-column-2, .work-column-3 {width: 360px}
+    .work-column-1, .work-column-2, .work-column-3 {width: 28.125vw}
 
     .work-section {
-        grid-template-columns: repeat(3, 360px);
-        grid-column-gap: 30px;
+        grid-template-columns: repeat(3, 28.125vw);
+        grid-column-gap: 2.344vw;
         width: 1142px}
 
     .interieur-section, .porsche-section {height: 509.275px }
@@ -468,12 +474,12 @@ button.cta {
 
     h2 {font-size: 4.026vw}
 
-    h1 {font-size: 21.669vw}
+    .h1 {font-size: 21.669vw}
 
     header {
         margin-top: 41.015625vh;
         height: 35.871vw;
-        margin-top: calc(100vh - 35.139vw)}
+        margin-top: calc(100vh - 410px - 30px)}
 
     .work-title {
         font-size: 4.026vw;
@@ -514,6 +520,11 @@ button.cta {
     }
 
     .name {font-size: 1.302vw}
+
+    .h1 {
+        width: 1180px;
+        margin-top: 30px
+    }
 }
 
 @media screen and (min-width: 300px) and (max-width: 768px) {
@@ -526,6 +537,8 @@ button.cta {
         width: calc(100vw - 6.154vw);
         align-items: flex-end
     }
+
+    .h1 .nameTitle {margin-top: 10px}
 
     .block-menu {
         height: 8.205vw;
@@ -550,7 +563,7 @@ button.cta {
         height: 6.410vw;
         font-size: 3.077vw}
 
-    h1 {
+    .h1 {
         font-size: 16.744vw;
         top: 0}
 
@@ -563,7 +576,7 @@ button.cta {
         }
 
     header {
-        margin-top: calc(100vh - 14.282vh);
+        margin-top: calc(100vh - 115px - 30px);
         margin-right: calc((100vw - 79.487vw)/2);
         margin-bottom: 0;
         margin-left: calc((100vw - 79.487vw)/2);
@@ -620,7 +633,10 @@ button.cta {
         position: relative;
         margin: 8vw 2.667vw 2.667vw 2.667vw}
 
-    .work-overflow {overflow: visible;}
+    .work-overflow {
+        width: 80vw;
+        overflow: hidden;
+        border-radius: 15px}
 
     img.work {width: 80vw}
 
