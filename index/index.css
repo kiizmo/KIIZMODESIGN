@@ -565,7 +565,8 @@ button.cta {
 
     .h1 {
         font-size: 16.744vw;
-        top: 0}
+        top: 0;
+    margin-bottom: 110px}
 
     .work-title {
         opacity: 1;
