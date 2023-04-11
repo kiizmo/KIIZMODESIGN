@@ -576,11 +576,10 @@ button.cta {
         }
 
     header {
-        margin-top: calc(100vh - 115px - 30px);
-        margin-right: calc((100vw - 79.487vw)/2);
-        margin-bottom: 0;
-        margin-left: calc((100vw - 79.487vw)/2);
-        width: 79.487vw;}
+        margin: 0px;
+        width: 80vw;
+        height: 100vh;
+        justify-content: flex-end;}
 
     .block-menu.active {
         width: calc(100vw - 8.205vw);
@@ -636,7 +635,7 @@ button.cta {
     .work-overflow {
         width: 80vw;
         overflow: hidden;
-        border-radius: 15px}
+        border-radius: 1px}
 
     img.work {width: 80vw}
 
